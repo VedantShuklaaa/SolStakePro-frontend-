@@ -16,7 +16,7 @@ export const Navbar = () => {
             href: '/about',
         },{
             title: 'Calculator',
-            href: '/Calulator'
+            href: '/calculator'
         }
     ]
 

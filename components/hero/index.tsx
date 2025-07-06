@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { HoverBorderGradient } from '../ui/hover-border-gradient';
+import Link from 'next/link';
 import { Container } from '../container';
 
 export const Hero = () => {
@@ -33,12 +34,12 @@ export const Hero = () => {
                             Calculate your potential Solana staking rewards with precision. Understand your returns, compare validators, and make informed staking decisions.
                         </p>
                         <div className='flex gap-4 mt-10'>
-                            <HoverBorderGradient className='h-12 w-50 flex justify-center items-center text-xl cursor-pointer'>Start Calculating</HoverBorderGradient>
-                            <HoverBorderGradient className='h-12 w-60 flex justify-center items-center text-xl cursor-pointer'>Learn About Staking</HoverBorderGradient>
+                            <HoverBorderGradient className='h-12 w-50 flex justify-center items-center text-xl cursor-pointer'><Link href="/calculator">Start Calculating</Link></HoverBorderGradient>
+                            <HoverBorderGradient className='h-12 w-60 flex justify-center items-center text-xl cursor-pointer'><Link href="/about">Learn About Staking</Link></HoverBorderGradient>
                         </div>
                         <div className='flex gap-10 mt-15'>
                             {cards.map((Items, idx) => (
-                                <Container className='h-[25vh] w-[15vw] flex flex-col items-center justify-center gap-2 rounded-2xl border bg-white/1' key={idx}>
+                                <Container className='h-[25vh] w-[15vw] flex flex-col items-center justify-center gap-2 rounded-2xl border bg-white/5 backdrop-blur-2xl' key={idx}>
                                     <div className=' h-18'><Image src={Items.image} height={50} width={50} alt='no image'/></div>
                                     <div className='flex text-center text-3xl font-bold'>{Items.title}</div>
                                     <div className='flex text-center text-xl w-60 font-light'>{Items.description}</div>

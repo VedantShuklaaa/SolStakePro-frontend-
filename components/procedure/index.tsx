@@ -30,7 +30,7 @@ export const Procedure = () => {
     return (
         <div className='h-[120vh] flex items-center justify-center'>
             <div className='h-[120vh] w-full flex justify-center items-center bg-gradient-to-br from-[#150f35] via-black to-[#150f35]'>
-                <div className='border border-zinc-800 h-[100vh] w-[80vw] rounded-2xl backdrop-blur-2xl bg-white/5'>
+                <div className='border border-zinc-800 h-[100vh] w-[70vw] rounded-2xl backdrop-blur-2xl bg-white/5'>
                     <section className="py-10">
                         <div >
                             <div className="text-center max-w-3xl mx-auto mb-16">
